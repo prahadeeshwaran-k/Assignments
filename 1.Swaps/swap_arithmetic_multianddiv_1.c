@@ -1,3 +1,5 @@
+//date:10/5/2025-tue
+//chapter:operators
 #include<stdio.h>
 int main(){
     int a,b;
