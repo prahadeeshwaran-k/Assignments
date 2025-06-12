@@ -19,10 +19,10 @@ int main(){
         printf("A is Greater");
     }
     else if((b>a) && (b>c)){
-        printf("A is Greater");
+        printf("B is Greater");
     }
     else if((c>a) && (c>b)){
-        printf("A is Greater");
+        printf("C is Greater");
     }
     else {
         printf("Some numbers might be equal, or no single number is strictly greatest.\n");
