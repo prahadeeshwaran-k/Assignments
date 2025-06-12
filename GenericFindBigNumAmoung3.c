@@ -17,14 +17,11 @@ int main() {
     
     if (a >= b && a >= c) {
         if ((a == b) || (a == c)) {
-            //printf("A is greatest and equal to ");
             if (a == b && a == c) {
                 printf("All three numbers are equal: %d = %d = %d\n", a, b, c);
             } else if (a == b) {
-                //printf("B\n");
                 printf("A = B");
             } else {
-                //printf("C\n");
                 printf("A = C");
             }
         } else {
