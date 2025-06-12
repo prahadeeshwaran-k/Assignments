@@ -28,7 +28,13 @@ int main(){
         }
     }
     else if(ch == '%')
-        printf("%d %% %d = %d\n",a,b,a%b);
+        if(b != 0){
+            printf("%d %% %d = %d\n",a,b,a%b);
+        }
+        else{
+            printf("B is zero\n");
+        }
+       
     else { 
         printf("Error: Invalid operation selected.\n");
     }
