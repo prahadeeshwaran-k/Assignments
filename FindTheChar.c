@@ -1,4 +1,4 @@
-//date:10/6/2025-wed
+//date:11/6/2025-wed
 //chapter:control statement
 #include<stdio.h>
 int main(){
