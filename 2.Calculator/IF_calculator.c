@@ -1,5 +1,6 @@
 //date:11/6/2025-wed
 //chapter:control statement
+//Title: Simple Calculator using IF Statement
 #include<stdio.h>
 int main(){
     int a,b;

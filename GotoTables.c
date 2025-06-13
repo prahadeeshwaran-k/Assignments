@@ -1,5 +1,6 @@
 //date:12/6/2025-thur
 //chapter:control statement
+//Title:Multiplication Table using goto statement
 #include<stdio.h>
 int main(){
     int num1,num2,i=0;

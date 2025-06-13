@@ -1,5 +1,6 @@
 //date:10/5/2025-tue
 //chapter:operators
+//Title: Swap two numbers using arithmetic operations
 #include<stdio.h>
 int main(){
     int a,b;

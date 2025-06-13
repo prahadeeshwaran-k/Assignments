@@ -1,5 +1,6 @@
 //date:11/6/2025-wed
 //chapter:control statement
+//Title: Find the type of character entered by user
 #include<stdio.h>
 int main(){
     char var;

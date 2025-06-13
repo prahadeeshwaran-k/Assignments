@@ -1,5 +1,6 @@
 //date:11/6/2025-wed
 //chapter:control statement
+//Title: Find the greatest number among three numbers
 #include<stdio.h>
 int main(){
     int a,b,c;
@@ -9,7 +10,7 @@ int main(){
     printf("Enter value for B: ");
     scanf("%d", &b);
 
-    printf("Enter value for B: ");
+    printf("Enter value for C: ");
     scanf("%d", &c);
     //10,20,30
     if(a==b && b==c){

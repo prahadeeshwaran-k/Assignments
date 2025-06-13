@@ -1,5 +1,6 @@
 //date:10/6/2025-wed
 //chapter:control statement
+//Title: Find the greatest number among three numbers
 #include <stdio.h>
 
 int main() {
