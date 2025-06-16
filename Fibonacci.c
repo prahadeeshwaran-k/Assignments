@@ -10,14 +10,15 @@ int main(){
     scanf("%d",&x);
 
         while (x != 0)
-        {   
-            printf("%d ",i);
-
+        {
             result = i+j;
             i=j;
             j=result;
 
             x--;
         }
-        
+    }
+    
+    printf("%d",j);
+    
 }
