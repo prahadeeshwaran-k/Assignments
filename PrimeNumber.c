@@ -1,3 +1,7 @@
+//date:14/6/2025-sat
+//chapter:control statement
+//Title: Prime Number Checker
+// Description: This program checks if a given number is prime.
 #include<stdio.h>
 int main() {
     int num ,flag = 1,i=3;

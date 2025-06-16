@@ -1,3 +1,7 @@
+//date:14/6/2025-mon
+//chapter:control statement
+//Title: Fibonacci Series
+// Description: This program generates the Fibonacci series up to a given number.
 #include<stdio.h>
 int main(){
     int i=0, j=1,x,result=0;//!my mistake result was uninitilized 
