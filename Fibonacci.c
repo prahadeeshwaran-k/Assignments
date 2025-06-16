@@ -18,7 +18,3 @@ int main(){
             x--;
         }
     }
-    
-    printf("%d",j);
-    
-}
