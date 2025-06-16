@@ -16,6 +16,7 @@ int main(){
     else{
         while (x != 0)
         {
+            printf("%d",i);
             result = i+j;
             i=j;
             j=result;
@@ -23,6 +24,6 @@ int main(){
         }
     }
     
-    printf("%d",j);
+   
     
 }
