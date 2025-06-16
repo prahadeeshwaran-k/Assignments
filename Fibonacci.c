@@ -7,22 +7,15 @@ int main(){
     int i=0, j=1,x,result;
     printf(" enter how many series:");
     scanf("%d",&x);
-    if(x==0){
-        j= 0;
-    }
-    else if (x==1){
-        j=1;
-    }
-    else{
         while (x != 0)
-        {
+        {   
+            printf("%d ",i);
+
             result = i+j;
             i=j;
             j=result;
+
             x--;
         }
-    }
-    
-    printf("%d",j);
     
 }
