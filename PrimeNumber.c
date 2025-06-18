@@ -1,4 +1,4 @@
-//date:14/6/2025-sat
+//date:16/6/2025-sat
 //chapter:control statement
 //Title: Prime Number Checker
 // Description: This program checks if a given number is prime.

@@ -1,7 +1,9 @@
-//date:14/6/2025-sat
+//date:16/6/2025-sat
 //chapter:control statement
 //Title: Fibonacci Series
-// Description: This program generates the Fibonacci series up to a given number of terms.
+//Description: This program generates the Fibonacci series up to a given number of terms.
+//*note:in Fibonacci we need to print the the a or i or x means thge 1st vaule
+
 #include<stdio.h>
 int main(){
     
@@ -11,10 +13,10 @@ int main(){
 
         while (x != 0)
         {
+            printf("%d ",i);
             result = i+j;
             i=j;
             j=result;
-
             x--;
         }
     }
