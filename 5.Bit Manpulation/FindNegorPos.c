@@ -1,3 +1,7 @@
+//date:19/6/2025-sat
+//chapter:control statement
+//Title: Find Neg or Pos using Bit Manipulation
+//Description: This program checks if a given number is negative or positive using bit manipulation.
 #include <stdio.h>
 int main()
 {

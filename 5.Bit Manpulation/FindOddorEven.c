@@ -1,3 +1,7 @@
+//date:19/6/2025-sat
+//chapter:control statement
+//Title: Find Odd or Even using Bit Manipulation
+//Description: This program checks if a given number is odd or even using bit manipulation.
 #include<stdio.h>
 int main(){
     int bit,mask;

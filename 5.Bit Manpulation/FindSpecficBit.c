@@ -1,3 +1,7 @@
+//date:19/6/2025-sat
+//chapter:control statement
+//Title: Find the Specific Bit using Bit Manipulation
+//Description: This program checks if a given bit is set or not using bit manipulation.
 #include<stdio.h>
 int main(){
     int bit,mask,val;
