@@ -8,7 +8,7 @@ int main(){
     printf("Enter the Alphabet: ");
     scanf("%c",&alph);
 
-    if(alph >= 'A' && 'Z'<=alph || (alph >= 'a' && alph <= 'z') ){
+    if(alph >= 'A' && alph<='Z' || (alph >= 'a' && alph <= 'z') ){
         printf("Before %c:",alph);
         mask = (1<<5);
         result = alph^mask;//else use alph^32 is same
