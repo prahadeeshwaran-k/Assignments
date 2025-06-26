@@ -15,6 +15,7 @@ int main(){
         {
         printf("%d",((*fptr)>>i)&1);
         }
+        fptr++;
     }
     
 }
