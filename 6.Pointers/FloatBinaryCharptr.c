@@ -8,14 +8,14 @@ int main(){
     printf("Enter a Float Value: ");
     scanf("%f",&f);
 
-    unsigned char * fptr = (unsigned char*)&f;
-
+    char * fptr = (char*)&f;
+    fptr= fptr+3;
     for(int j =1;j<=4;j++){
         for(int i = 7; i>=0; i--)
         {
         printf("%d",((*fptr)>>i)&1);
         }
-        fptr++;
+        fptr--;
     }
     
 }
