@@ -9,6 +9,7 @@ int main(){
     int size = 1;
     printf("\nBefore : %s",str);
 
+    // * to find the total size of the character present int the array 
     while (str[i])
     {
         size++; i++;
@@ -16,7 +17,7 @@ int main(){
 
     i = 0;
     
-    while (size>=0)
+    while (size>=0)// up to the \0
     {   
         if(str[i] == ' ' || str[i]=='\0'){
             swap(real,i);
@@ -30,9 +31,8 @@ int main(){
 }
 
 void swap(int first,int last){
-    int n = last;
     char temp;
-    for(int i = first, j = n -1 ; i<j ; i++ ,j--){
+    for(int i = first, j = last -1 ; i<j ; i++ ,j--){
         temp = str[i];
         str[i] = str[j];
         str[j] = temp;
