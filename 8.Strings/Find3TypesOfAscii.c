@@ -2,7 +2,7 @@
 int main(){
     char str[100];
     printf("Enter the String: ");
-    scanf("%[^\n]", &str);
+    scanf("%[^\n]",str);
     int i = 0;
     int alphabet = 0,integer = 0,special = 0;
     while (str[i])
@@ -12,7 +12,7 @@ int main(){
         }
         else if((str[i]>= 'A' && str[i]<= 'Z') || (str[i]>= 'a' && str[i]<= 'z')){
             alphabet++;
-        }else{
+        }else if(str[i] != ' '){
             special++;
         }
         i++;
