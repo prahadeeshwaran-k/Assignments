@@ -1,3 +1,7 @@
+//date:1/7/2025-tues
+//chapter:Strings
+//Title: Reverse The String
+//Description: This program reverses the words in a given string.
 #include<stdio.h>
 int main(){
     char str[] = "Vanakkam Chennai Hello!";

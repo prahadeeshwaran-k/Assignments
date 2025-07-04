@@ -1,3 +1,7 @@
+//date:1/7/2025-tues
+//chapter:Strings
+//Title: Find 3 Types of ASCII
+//Description: This program finds and counts 3 types of ASCII characters in a string: alphabets, integers, and special characters.
 #include<stdio.h>
 int main(){
     char str[100];

@@ -1,3 +1,7 @@
+//date:4/7/2025-fri
+//chapter:Functions
+//Title: Prime Number Function
+// Description: This program checks whether a number is prime or not using a function if the number is prime return 0 otherwise return -1.
 #include<stdio.h>
 int prime(int);
 

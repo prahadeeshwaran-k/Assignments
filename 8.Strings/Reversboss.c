@@ -1,3 +1,8 @@
+//date:4/7/2025-thurs
+//chapter:Strings
+//Title: Reverse Words in a String
+//Description: This program reverses the words in a given string.
+//Example: "hello    vector   india" becomes "olleh    rotcev   aidni"
 #include<stdio.h>
 
 void swap(int first,int last);

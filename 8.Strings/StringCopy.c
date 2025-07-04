@@ -1,3 +1,7 @@
+//date:1/7/2025-tues
+//chapter:Strings
+//Title: String Copy
+// Description: This program copies one string to another.
 #include<stdio.h>
 int main(){
     char str1[100];

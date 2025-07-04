@@ -1,3 +1,7 @@
+//date:1/7/2025-tues
+//chapter:Strings
+//Title: Palindrome of String
+//Description: This program checks whether a string is a palindrome or not.
 #include<stdio.h>
 int main(){
 

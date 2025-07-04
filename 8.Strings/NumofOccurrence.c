@@ -1,3 +1,7 @@
+//date:1/7/2025-tues
+//chapter:Strings
+//Title: Num of Occurrence
+//Description: This program finds and counts the number of occurrences of each character in a string.
 #include<stdio.h>
 int main(){
     char str[100];
