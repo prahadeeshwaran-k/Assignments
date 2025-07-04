@@ -1,27 +1,24 @@
-//date:3/7/2025-thurs
+//date:4/7/2025-thurs
 //chapter:Strings
 //Title: Reverse Words in a String
 //Description: This program reverses the words in a given string.
-//Example: "hello    vector   india" becomes "olleh    rotcev   aidni"
+//Example: "hello    vector   india" becomes "india   vector    hello"
 #include<stdio.h>
+#include<string.h>
 
 void swap(int first,int last);
 char str[256] = "hello    vector   india";
 
 int main(){
-    int i = 0;
-    int real = 0;
-    int size = 1;
-    printf("\nBefore : %s",str);
-
-    // * to find the total size of the character present int the array 
-    while (str[i])
-    {
-        size++; i++;
-    }
-
-    i = 0;
+    int i = 0, real = 0, size;
     
+    size = strlen(str)+1; // * to find the total size of the character present int the array
+    printf("%d",size) ;
+    printf("\nBefore   :%s",str);
+
+    swap(0,size-1);
+    printf("\n1st Swap :%s",str);
+
     while (size>=0)// up to the \0
     {   
         if(str[i] == ' ' || str[i]=='\0'){
@@ -31,7 +28,7 @@ int main(){
         i++;
         size--;
     }
-    printf("\nAfter  : %s",str);
+    printf("\nAfter    :%s",str);
 
 }
 
