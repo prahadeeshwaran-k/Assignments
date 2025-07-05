@@ -14,6 +14,10 @@ int main(){
         }
         
     }
+    if(max == max2){
+        printf("All elements are same\n");
+        return 0;
+    }
     printf("Maximum 1st : %d\n",max);
     printf("Maximum 2nd : %d",max2);
 }
