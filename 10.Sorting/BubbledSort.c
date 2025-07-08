@@ -1,3 +1,4 @@
+//class notes
 #include<stdio.h>
 void printArr(int *,int);
 
