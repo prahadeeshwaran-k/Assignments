@@ -1,4 +1,4 @@
- Explanation Table for n = 4:
+/*Explanation Table for n = 4:
 
  |  i  | absolute(|i|) | spaces (n - |i|) | stars ((n - |i|)+1) | Line Printed   |
  |-----|---------------|-------------------|----------------------|----------------|
@@ -11,7 +11,7 @@
  |  2  |       2       |         2         |          3           | `***`          |
  |  3  |       3       |         1         |          2           | `**`           |
  |  4  |       4       |         0         |          1           | `*`            |
-
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

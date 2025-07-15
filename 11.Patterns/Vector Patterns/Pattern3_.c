@@ -1,5 +1,12 @@
 //date:9/7/2025-Wed
 //chapter:Pattern
+/*
+    1    
+   ***   
+  22222  
+ ******* 
+333333333
+*/
 #include<stdio.h>
     int main(){
         int n  = 5;

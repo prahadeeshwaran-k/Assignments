@@ -1,4 +1,6 @@
 //2,145,40585
+//1! + 4! + 5! = 1 + (4321) + (5432*1) = 1 + 24 + 120 = 145
+//a positive integer that equals the sum of the factorials of its digits
 #include<stdio.h>
 int main(){
     int snum,rem,strong =0 ;
