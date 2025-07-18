@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 
 void uppercase(char *str){
     int i = 0;
