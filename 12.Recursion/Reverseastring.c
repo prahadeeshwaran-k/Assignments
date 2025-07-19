@@ -1,3 +1,8 @@
+// date: 19/07/2025 - Saturday
+// chapter: Strings
+// Title: Reverse a String using Two-Pointer Method
+// Description: This program reverses a given string in-place using a two-pointer approach.
+// Example: Input: "Hello Vanakkam Hola" → Output: "aloH makkanaV olleH"
 #include<stdio.h>
 #include<string.h>
 
