@@ -1,3 +1,7 @@
+//date:21/7/2025-mon
+//chapter:2D-Array
+//Title: Matrix Addition
+//Description: This program adds two matrices.
 #include<stdio.h>
 //void printmatrix(int matrix[3][3], int row, int column); //! this will not working
 void printmatrix(int row, int column, int matrix[row][column]); 
