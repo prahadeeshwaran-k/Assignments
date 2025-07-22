@@ -1,1 +1,18 @@
+# Ignore common compiled executable files
+*.exe
+*.out
+
+# Ignore all executables in Unix-like systems (Linux/macOS)
+# This matches any file with no extension, typically executables
+# But Git can't ignore based on permissions, so this helps only partially
+# You can also manually list known executable file names if needed
+
+# Ignore build artifacts and binaries
+*.o
+*.obj
+*.dll
+*.so
+*.a
+
+# Ignore specific config file
 .vscode/tasks.json
