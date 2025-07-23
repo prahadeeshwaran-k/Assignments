@@ -1,3 +1,10 @@
+// date: 23/07/2025 - Wednesday
+// chapter: 2D-Array
+// Title: Dictionary Sorting
+// Description: This program sorts a dictionary of words in alphabetical order using bubble sort.
+// Example: Input: ["jungle", "grape", "ice", "apple",
+// "banana", "date", "elephant", "frog", "cherry", "hat"]
+// Output: Sorted dictionary in alphabetical order
 #include<stdio.h>
 #include<string.h>
 int main(){
