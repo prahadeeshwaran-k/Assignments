@@ -18,7 +18,8 @@ int main()
     {
         printf("%d", (num >> i) & 1);
     }
-
+    
+    // ! LOGIC
     mask = (1 << pos);
     result = num | mask;
 
