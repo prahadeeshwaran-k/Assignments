@@ -1,9 +1,8 @@
 //tempcode
 #include<stdio.h> 
 int main(){
-int i=10; 
-int *p=i;
-char **q=&p;
-printf("%d\n",*q+1); 
-printf("%d\n",**q);
+int n = 5;
+//scanf("%d", &n);
+int arr[n][n];  // <-- Is this valid?
+printf("%d",sizeof(arr));
 }

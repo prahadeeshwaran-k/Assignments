@@ -2,6 +2,7 @@
     "files.associations": {
         "PrintNuminRange.C": "cpp",
         "math.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stdlib.h": "c"
     }
 }
