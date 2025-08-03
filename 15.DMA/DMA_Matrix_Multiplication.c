@@ -1,3 +1,7 @@
+// date: 3/08/2025 - Sunday
+// chapter: DMA
+// Title: Matrix Multiplication using Dynamic Memory Allocation
+// Description: This program performs matrix multiplication using dynamic memory allocation.
 
 #include <stdio.h>
 #include <stdlib.h>
