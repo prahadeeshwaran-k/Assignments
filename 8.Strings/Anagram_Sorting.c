@@ -1,14 +1,17 @@
+// Anagram Sorting in C
+// This program checks if two strings are anagrams of each other by sorting them.
+// It uses the qsort function from the standard library to sort the strings.
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
 // Comparator for qsort()
 int comp(const void* a, const void* b) {
-  	return strcmp((char*)a, (char*)b);
+    return strcmp((char*)a, (char*)b);
 }
 
 int anagram(char *s1, char *s2) {
-  
+
     // If lengths are not the same, they cannot be anagrams
     if (strlen(s1) != strlen(s2))
         return 0;
