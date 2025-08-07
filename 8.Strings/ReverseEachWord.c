@@ -4,23 +4,16 @@
 //Description: This program reverses the words in a given string.
 //Example: "hello    vector   india" becomes "olleh    rotcev   aidni"
 #include<stdio.h>
-
+#include<string.h>
 void swap(int first,int last);
 char str[256] = "hello    vector   india";
 
 int main(){
     int i = 0;
     int real = 0;
-    int size = 1;
+    int size;
     printf("\nBefore : %s",str);
-
-    // * to find the total size of the character present int the array 
-    while (str[i])
-    {
-        size++; i++;
-    }
-
-    i = 0;
+    size = strlen(str);
     
     while (size>=0)// up to the \0
     {   
@@ -32,7 +25,6 @@ int main(){
         size--;
     }
     printf("\nAfter  : %s",str);
-
 }
 
 void swap(int first,int last){
