@@ -1,7 +1,5 @@
-//tempcode
 #include<stdio.h> 
 #include<string.h>
-
 char* mystrstr(char * s,char *key){
     int i = 0;
     while(s[i]){
