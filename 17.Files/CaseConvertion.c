@@ -1,7 +1,8 @@
+//Write a Program to Convert Lower to Upper and Upper to Lower Cases of a given file.
 #include<stdio.h>
 int main(int argc, char * argv[]){
     if (argc < 2) {
-        printf("Usage: %s <filename>\n", argv[0]);
+        printf("File </%s> Not there\n", argv[0]);
         return 1;
     }
 
@@ -15,10 +16,12 @@ int main(int argc, char * argv[]){
     int ch; 
     while((ch = fgetc(fp)) != EOF){
         if(((ch >= 'a') && (ch <= 'z')) || ((ch >= 'A') && (ch <= 'Z'))){
-        char modified_ch = ch ^ (1 << 5);
-        fseek(fp, -1, SEEK_CUR);
-        fputc(modified_ch, fp);
-        fseek(fp, 0, SEEK_CUR);
+            char modified_ch = ch ^ (1 << 5);
+            fseek(fp, -1, SEEK_CUR);
+            fputc(modified_ch, fp);
+        }
+        else{
+            fputc(ch,fp);
         }
     }
 

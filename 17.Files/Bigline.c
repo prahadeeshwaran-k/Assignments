@@ -9,7 +9,7 @@ int main(){
         return 0;
     }
     
-    while((ch = fgetc(fs))!= EOF){
+    while((ch = fgetc(fp))!= EOF){
         temp++;
         chcount++;
         if(ch == '\n'){
@@ -22,11 +22,9 @@ int main(){
         }
     }
     
-    printf("Total Characters        : %d",chcount);
-    printf("Total No of Lines       : %d",lines);
-    printf("Bigline Index number    : %d",Bigline);
-    printf("Bigline Total Characters: %d",biglinelen);
-    
-    
+    printf("Total Characters        : %d\n",chcount);
+    printf("Total No of Lines       : %d\n",lines);
+    printf("Bigline Index number    : %d\n",bigline);
+    printf("Bigline Total Characters: %d\n",biglinelen);
 }
 
