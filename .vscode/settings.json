@@ -4,6 +4,7 @@
         "math.h": "c",
         "stdio.h": "c",
         "stdlib.h": "c",
-        "1.identitymatrix.C": "cpp"
+        "1.identitymatrix.C": "cpp",
+        "string.h": "c"
     }
 }
