@@ -1,3 +1,4 @@
+//Write a Program to replace the perticular word with another word ( can be any length ) in a given file.
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h> 

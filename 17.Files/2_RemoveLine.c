@@ -12,7 +12,7 @@ int main(int argc, char* argv[]){
     int line;
     char buffer[MAXLINE];
     
-    int Tlines = 0;
+    int Tlines = 0;//total lines
 
     FILE *fp = fopen(argv[1],"r");
     while((fgets(buffer, MAXLINE, fp)) != NULL){
