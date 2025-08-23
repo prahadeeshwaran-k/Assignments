@@ -1,28 +1,45 @@
-#include<stdio.h>
-#include<string.h>
-int main(int argc, char *argv[]){
-    FILE *fsrc = fopen(argv[1],"r");
-    FILE *fdest = fopen("Replace.txt","w");
-    if(fsrc == NULL){
-        printf("No File is Found");
-        return 0;
-    }
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h> 
 
-int len = strlen(argv[3]);
-char buffer[256];
-char* ptr;
-char *temp;
+int main() {
+    char key[] = "Never";
+    char pare[] = "hi";
+    char buffer[257];
+    char buffer3[256] = {0}; 
+    FILE *fp = fopen("text.txt", "r");
+    FILE *fd = fopen("revs.txt", "w");
 
-    while (fgets(buffer,256,fsrc)!= NULL)
-    {   ptr = buffer;
-        while(temp != NULL){
-            if(temp = strstr(ptr,argv[2])){
-                for(int i = 0;i<len;i++)
-                    temp[i] = argv[3][i];
-            }
-        }
-        
-        
-    }
     
+    if (fp == NULL) {
+        printf("File not found!\n");
+        return 2;
+    }
+    system("cat text.txt");
+    printf("\n");
+    char* ptr = buffer; 
+    char* dest = buffer3;
+    char* temp;
+
+    while (fgets(buffer, sizeof(buffer), fp) != NULL) {
+        while ((temp = strstr(ptr, key)) != NULL) {
+        
+        strncpy(dest, ptr, temp - ptr);
+        dest += (temp - ptr);
+
+        strcpy(dest, pare);
+        dest += strlen(pare);
+
+        ptr = temp + strlen(key);
+        }
+        strcpy(dest, ptr);
+        fputs(buffer3,fd);
+    }
+
+    fclose(fd);
+    fclose(fp);
+    system("cat revs.txt");
+
+    printf("\n");
+    return 1;
 }
