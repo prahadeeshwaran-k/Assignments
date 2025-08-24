@@ -7,8 +7,9 @@ typedef struct student{
     struct student *next;
 } node;
 
-void add_end(node **head);
-void print(const node * head);
+void add_end(node **);
+void print(node * );
+void reversPrint(node*);
 
 int main(){
     node *hptr = NULL;
@@ -16,13 +17,14 @@ int main(){
     add_end(&hptr);
     add_end(&hptr);
     print(hptr);
+    reversPrint(hptr);
     
 }
 
 void add_end(node **head){
     node *temp  = (node*)malloc(sizeof(node));
     printf("Enter the Data:Roll Name Marks\n");
-    scanf("%d %c %f",&temp->roll,temp->name,&temp->marks);
+    scanf("%d %19s %f",&temp->roll,temp->name,&temp->marks);
 
         if(*head == NULL){
             temp->next = *head;
@@ -30,15 +32,15 @@ void add_end(node **head){
         }else{
             node*last = *head;
 
-            while (last == NULL)
+            while (last->next != NULL)
                 last = last->next;
 
-            temp->next = last->next;
+            temp->next = NULL;
             last->next = temp;
         }
 }
 
-void print(const node * head){
+void print(node * head){
     node * temp = head;
 
     printf("Roll | Name | Marks\n");
@@ -46,5 +48,13 @@ void print(const node * head){
     while(temp){
         printf("%d %s %f\n", temp->roll, temp->name, temp->marks);
         temp = temp->next;
+    }
+}
+
+//Revers Print
+void reversPrint(node*head){
+    if(head != NULL){
+        reversPrint(head->next);
+        printf("%d %s %f\n", head->roll, head->name, head->marks);
     }
 }
