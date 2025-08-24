@@ -33,8 +33,7 @@ void add_begin(node **head){
 }
 
 void print(node *head){
-    node * temp = (node*)malloc(sizeof(node));
-    temp = head;
+    node * temp = head;
 
     printf("Roll | Name | Marks\n");
 
