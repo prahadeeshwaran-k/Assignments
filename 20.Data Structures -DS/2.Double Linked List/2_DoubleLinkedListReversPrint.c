@@ -50,6 +50,4 @@ void Revprint(node*ptr){
         printf("%d %s\n",ptr->roll,ptr->name);
         ptr = ptr->prev;
     }
-    
-    
 }

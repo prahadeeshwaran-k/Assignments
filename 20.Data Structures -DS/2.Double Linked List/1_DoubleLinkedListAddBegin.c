@@ -46,5 +46,4 @@ void print(node*ptr){
         printf("%d %s\n",ptr->roll,ptr->name);
         ptr =ptr->next;
     }
-    
 }
