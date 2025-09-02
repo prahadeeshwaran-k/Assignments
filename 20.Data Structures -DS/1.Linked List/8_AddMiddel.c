@@ -9,8 +9,8 @@ typedef struct student{
 
 void add_end(node **);
 void print(node * );
-void reverselink(node **);
-void delete_node(node **,int);
+void reverselink(node **head);
+void add_middle(node **head);
 
 int main(){
     node *hptr = NULL;
@@ -18,7 +18,9 @@ int main(){
     add_end(&hptr);
     add_end(&hptr);
     print(hptr);
-    delete_node(&hptr,2);
+    add_middle(&hptr);
+    add_middle(&hptr);
+    add_middle(&hptr);
     print(hptr);
     
 }
@@ -53,24 +55,21 @@ void print(node * head){
     }
 }
 
-void delete_node(node **ptr, int n){
-    node *prev;
-    node *temp = *ptr;
-
-    while (temp != NULL)
-    {
-        if(temp->roll == n){
-            //if is only for the head node is a target node
-            if(temp == *ptr)
-                *ptr = temp->next;
-            else
-                prev->next = temp->next;  //* also : prev->next->next;
-            free(temp);
-            return;
+void add_middle(node **ptr){
+    node *temp  = (node*)malloc(sizeof(node));
+    printf("Enter the Data:Roll Name Marks\n");
+    scanf("%d %19s %f",&temp->roll,temp->name,&temp->marks);
+    //check if the the current node is head ptr and  (newnode)<(headnode)
+    if((*ptr == NULL) || ((temp->roll) < (*ptr)->roll)){
+        temp->next = *ptr;
+        *ptr = temp;
+    }else{
+        node*last = *ptr;
+        //the present->next is not be null and the temp->roll < (present->next)->roll 
+        while((last->next!=NULL)&&(temp->roll > last->next->roll)){
+            last = last->next;
         }
-        else{
-            prev = temp;
-            temp = temp->next;
-        }
+        temp->next = last->next;
+        last->next = temp;
     }
 }
