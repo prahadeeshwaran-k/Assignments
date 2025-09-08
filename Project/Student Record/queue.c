@@ -2,12 +2,22 @@
 #include <stdlib.h>
 #include "queue.h"
 
-void enque(roll**head,int rollno){
+void enque(roll**ptr,int rollno){
     roll * temp= (roll*)malloc(sizeof(roll));
     temp->num = rollno;
-
-    temp->next = *head;
-    *head = temp;
+    //check if the the current node is head ptr and  (newnode)<(headnode)
+    if((*ptr == NULL) || ((temp->num) < (*ptr)->num)){
+        temp->next = *ptr;
+        *ptr = temp;
+    }else{
+        roll*last = *ptr;
+        //the present->next is not be null and the temp->roll < (present->next)->roll 
+        while((last->next!=NULL)&&(temp->num > last->next->num)){
+            last = last->next;
+        }
+        temp->next = last->next;
+        last->next = temp;
+    }
 }
 
 int deque(roll **ptr){

@@ -2,14 +2,18 @@
 #include "queue.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include"colour.h"
+
 
 extern roll *rollhead; 
 
 void add_end(node **head) {
     int roll;
     node *temp  = (node*)malloc(sizeof(node));
-    printf("Enter the Data:Name & Marks\n");
-    scanf(" %29s %f", temp->name, &temp->marks);//Here we are add only Name and mark
+    printf(MAGENTA "Enter the Student:" RESET COLOR_226" Name\n"RESET);
+    scanf(" %[^\n]", temp->name);//Here we are add only Name
+    printf(MAGENTA "Enter the Student:" RESET COLOR_226" Mark\n"RESET);
+    scanf("%f", &temp->marks);//Here we are add only marks
 
     if (*head == NULL) {
         temp->roll = 1;
