@@ -4,5 +4,6 @@
 #include "student.h"
 
 void save(node *head);
+void init(node **head);
 
 #endif
