@@ -23,7 +23,8 @@ roll *rollhead = NULL;
 void print(node *head);
 
 int main()
-{
+{   
+    system("clear");
     Title(banner);
     sleep(3);
     node *hptr = NULL; // head pointer
