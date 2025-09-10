@@ -31,7 +31,7 @@ char menu5[][50] = {
         "Enter",
         "1. n/N : Sort With Name",
         "2. p/P : Sort With Percentage",
-	    "3. r/R : Sort With Roll"
+	"3. r/R : Sort With Roll"
     };
 
 void printMenu(char menu[][50], int size, char*title);

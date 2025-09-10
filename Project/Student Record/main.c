@@ -112,9 +112,30 @@ int main()
             break;
 
         case 'V': // Save
-            save(hptr);
-            system("clear");
-            printf("File save as student.dat.txt\n");
+	    system("clear");
+            printMenu(menu4, menu4size, "Modify Records");
+
+            char op_s;
+            printf("Enter a choice : ");
+            scanf(" %c", &op_s);
+            op_s = toupper(op_s);
+
+	    switch (op_M)
+            {
+            case 'S':
+                save(hptr);
+            	printf("File save as student.dat.txt\n");
+                break;
+            case 'E':
+                return 0;
+                break;
+            default:
+                printf("Invalid choice!\n");
+                break;
+            }
+
+            
+
             system("cat student.dat.txt");
             printf("Enter Q/q to go Menu: ");
             scanf(" %c", &quit);
@@ -125,9 +146,9 @@ int main()
             break;
 
         case 'T': // Sort The List
-            bubbleSortmarks(hptr);
+            
             system("clear");
-            printMenu(menu2, menu2size, "Sort Record");
+            printMenu(menu5, menu5size, "Sort Record");
 
             char op_T;
             printf("Enter a choice : ");
@@ -137,12 +158,15 @@ int main()
             {
             case 'N':
                 printf("SORTED by Name");
+		bubbleSortname(hptr);
                 break;
             case 'P':
                 printf("SORTED by Marks");
+		bubbleSortmarks(hptr);
                 break;
             case 'R':
                 printf("SORTED by Roll");
+		bubbleSort(hptr);
                 break;
             default:
                 break;
