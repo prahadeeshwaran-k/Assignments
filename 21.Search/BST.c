@@ -13,6 +13,8 @@ void pre_order(node*ptr);
 void in_order(node*ptr);
 node* search(node*ptr,int n);
 
+node*parent = NULL;// global variable to hold the parent address.
+
 int main(){
     node *root = NULL;
     char ch;
@@ -82,6 +84,7 @@ void in_order(node*ptr){
 
 node* search(node*ptr,int n){
     if (ptr == NULL) {
+        parent = NULL;//No Element in found it will make parent to null 
         return NULL;
     }
 
@@ -90,10 +93,89 @@ node* search(node*ptr,int n){
     }
     else if(n < ptr->data){
         //move left
+        parent = ptr;//Store the value of parent of finding node
         return search(ptr->left,n);
     }
     else{
         //move right
+        parent = ptr;//Store the value of parent of finding node
         return search(ptr->right,n);
     }
 }
+
+void delete(node**ptr,int n){
+    node* target = search(*ptr,n);
+
+    // Case 1: Node is a leaf (no children)
+    if((target->left == NULL) && (target->right == NULL)){
+        if(parent->left == target){
+            target->left = NULL; //Disconnect from parent's left
+        }
+        else{
+            target->right = NULL; // Disconnect from parent's right
+        }
+        free(target);
+        target = NULL;
+        return;
+    }
+
+    if((target->left !=NULL) && (target->right == NULL)){
+        if(parent->left == target){
+            parent-> left = target->left;
+        }else{
+            parent->left = target->left;
+        }
+        free(target);
+        target = NULL;
+        return;
+    }
+
+    if((target->left == NULL) && (target->right != NULL)){
+        if (parent->left == target)
+        {
+            parent->left = target->right;
+        }else{
+            parent->right = target->right;
+        }
+        free(target);
+        target = NULL;
+        return;
+    }
+
+    if((target->left != NULL) && (target->right != NULL)){
+        node* temp = target->left;
+
+        while (temp->right != 0)
+        {   
+            parent = temp;
+            temp = temp->right;
+        }
+
+        target->data = temp->data;
+        target = temp;
+
+        free(target);
+        target = NULL;
+        return;
+    }
+}
+
+
+//case 1
+    /*  
+             Before deletion (leaf = 40):
+
+                   20
+                  /  \
+                 10   30
+                       \
+                        40   <- target (leaf node)
+
+             After deletion:
+
+                   20
+                  /  \
+                 10   30
+                       \
+                        NULL
+    */
